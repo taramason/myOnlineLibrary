@@ -1,5 +1,5 @@
 
-"use strict";
+
 exports.up = function(knex, Promise) { //what to do when running migration
   return knex.schema.createTable("books", function (table) { //creates new table called books
   table.increments(); //increments id column w type of serial

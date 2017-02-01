@@ -21,5 +21,10 @@ $( document ).ready(function(){
     $.post("/addBookToTable", obj, function(data){
       console.log("book info added to table")
     })
+    newBookTitleVal = "Your book has been added. Please enter a new book"
+    newBookGenreVal = ""
+    newBookImgVal = ""
+    newBookDescrVal = ""
+//goes to new page
+    });
   })
-});

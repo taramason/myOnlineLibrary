@@ -16,7 +16,7 @@ router.post('/', function(req, res, next) {
       description: req.body.objDescr
     })
     .then(function() {
-      res.send("done adding to table");
+      res.send("books");
     })
     // .finally(function() {
     // });

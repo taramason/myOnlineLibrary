@@ -4,7 +4,10 @@ module.exports = {
     connection: 'postgres://localhost/galv_books'
   },
   production: {
-    client: 'pg',
-    connection: process.env.DATABASE_URL
+    client: 'postgresql',
+    connection: {
+      client: 'pg',
+      connection: process.env.DATABASE_URL
+    }
   }
 };

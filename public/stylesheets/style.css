@@ -9,7 +9,7 @@ a {
   display: flex;
 }
 .readsLogo {
-  height: auto;
+  height: 16vh;
   width: 16vh;
   padding: 2%;
 }
@@ -35,4 +35,7 @@ list-style-type: none;
 }
 .eachBook {
   margin-bottom: 5vh;
+}
+.addButton {
+  width: 100% !important; 
 }

@@ -9,8 +9,8 @@ a {
   display: flex;
 }
 .readsLogo {
-  height: 20vh;
-  width: auto;
+  height: auto;
+  width: 16vh;
   padding: 2%;
 }
 .mainDivCentered {

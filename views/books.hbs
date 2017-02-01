@@ -1,1 +1,17 @@
-{{books}}
+
+<h1>{{page_name}}</h1>
+
+{{#each data}}
+<ul class="noBullet">
+  <div class = "row eachBook">
+    <div class = "col s4 m4 l4">
+      <li>
+        <img class = "book" src = {{cover}}></img>
+      </div>
+        <h4>{{title}}</h4>
+        <p>{{description}}</p>
+      </li>
+  </div>
+</ul>
+
+{{/each}}

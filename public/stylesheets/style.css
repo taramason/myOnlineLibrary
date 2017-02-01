@@ -2,7 +2,6 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00B7FF;
 }
@@ -10,6 +9,30 @@ a {
   display: flex;
 }
 .readsLogo {
-  height: 10vh;
+  height: 20vh;
+  width: auto;
   padding: 2%;
+}
+.mainDivCentered {
+  width: 40vw;
+  height: 40vh;
+  border: 1px solid black;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.centered {
+  text-align: center;
+}
+.noBullet {
+list-style-type: none;
+}
+.book {
+  width: 20vw;
+}
+.eachBook {
+  margin-bottom: 5vh;
 }

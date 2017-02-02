@@ -1,5 +1,12 @@
 
-<h1>{{page_name}}</h1>
+<div class="titleContainer flex">
+  <div><h3>{{page_name}}</h3></div>
+</div>
+
+<div class="bookButton row">
+    <a  href="/add" class="waves-effect waves-light btn-large"><i class="material-icons left">playlist_add</i>Add a Book</a>
+    <a  href="/delete" class="deleteButton waves-effect waves-light btn-large"><i class="material-icons left">not_interested</i>Delete a Book</a>
+</div>
 
 {{#each data}}
 <ul class="noBullet">

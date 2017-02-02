@@ -30,6 +30,25 @@ a {
 .noBullet {
 list-style-type: none;
 }
+.titleContainer {
+  justify-content: space-between;
+}
+.addABook {
+  text-align: right;
+  justify-content: flex-end;
+  width: 100%;
+}
+.addBookText {
+  height: 10vh;
+  width: 10vw;
+  background-color: blue;
+}
+.deleteButton {
+  margin-left: 2vw;
+}
+.bookButton{
+  margin-bottom: 6vh;
+}
 .book {
   width: 20vw;
 }
@@ -37,5 +56,5 @@ list-style-type: none;
   margin-bottom: 5vh;
 }
 .addButton {
-  width: 100% !important; 
+  width: 100% !important;
 }

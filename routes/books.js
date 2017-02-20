@@ -11,6 +11,7 @@ router.get("/", function(req, res) {  //post is you calling from inside the prog
   const id = req.params.id;
   knex('books')  //refers to books table
     .select()
+    .orderBy("title", "asc")
     .then(function(answer) { //
         res.render("books", { //render always refers to views folder, + /books.hbs ("books")
           id: "id",

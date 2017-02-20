@@ -1,7 +1,7 @@
 <h1>{{title}}</h1>
 
 <div class="row">
-    <form class="addBookForm col s12">
+    <form class="addBookForm col s12" action="/add">
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Enter book title here." id="newBookTitle" type="text" required/>
@@ -11,19 +11,19 @@
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Enter the genre here." id="newBookGenre" type="text" required>
-          <label for="title">Genre</label>
+          <label for="genre">Genre</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Enter image URL here." id="newBookImg" type="text" required>
-          <label for="title">Cover Image</label>
+          <label for="cover">Cover Image</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Enter a short description here." id="newBookDescr" type="text" required>
-          <label for="title">Description</label>
+          <label for="description">Description</label>
         </div>
       </div>
       <!-- <div class="row">
@@ -34,7 +34,7 @@
       </div> -->
       <div class="row">
         <div class="input-field col s6">
-          <a  class="addButton waves-effect waves-light btn-large"><i class="material-icons left">done</i>Submit</a>
+          <a  type="submit" class="addButton waves-effect waves-light btn-large"><i class="material-icons left">done</i>Submit</a>
         </div>
       </div>
 

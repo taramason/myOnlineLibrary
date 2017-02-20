@@ -28,7 +28,10 @@ a {
   text-align: center;
 }
 .noBullet {
-list-style-type: none;
+  list-style-type: none;
+}
+.eachBook {
+    /*display: flex;*/
 }
 .titleContainer {
   justify-content: space-between;
@@ -44,6 +47,10 @@ list-style-type: none;
   background-color: blue;
 }
 .deleteButton {
+  margin-left: 0;
+  align-self: flex-end;
+}
+.editButton {
   margin-left: 2vw;
 }
 .bookButton{

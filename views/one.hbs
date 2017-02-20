@@ -1,0 +1,22 @@
+
+
+<ul class="noBullet">
+  <div class = "row eachBook">
+    <div class = "col s4 m4 l4">
+      <li>
+        <img class="book" src={{cover}}></img>
+      </div>
+        <h4 id="bookTitle{{id}}">{{title}}</h4>
+        <p>{{description}}</p>
+        <p>Genre: {{genre}}</p>
+      </li>
+      <!-- <button id="finalDelete{{id}}" href="/books" class="deleteButton waves-effect red btn-large"><i class="material-icons left">not_interested</i>Yes, I want to delete this Book</a> -->
+      <form action="/books/{{id}}?_method=DELETE" method="post">
+        <button  type="submit" class="deleteButton waves-effect red btn-large"><i class="material-icons left">not_interested</i>Delete</button>
+        <a  href="/books/{{id}}/edit" type="submit" class="editButton waves-effect green btn-large"><i class="material-icons left">mode_edit</i>Edit Book Info</a>
+      </form>
+
+
+
+  </div>
+</ul>

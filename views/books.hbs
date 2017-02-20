@@ -4,8 +4,7 @@
 </div>
 
 <div class="bookButton row">
-    <a  href="/add" class="waves-effect waves-light btn-large"><i class="material-icons left">playlist_add</i>Add a Book</a>
-    <a  href="/delete" class="deleteButton waves-effect waves-light btn-large"><i class="material-icons left">not_interested</i>Delete a Book</a>
+    <a  href="books/add" class="waves-effect waves-light btn-large"><i class="material-icons left">playlist_add</i>Add a Book</a>
 </div>
 
 {{#each data}}
@@ -13,11 +12,15 @@
   <div class = "row eachBook">
     <div class = "col s4 m4 l4">
       <li>
-        <img class = "book" src = {{cover}}></img>
+        <a href="books/{{id}}"><img class="book" src={{cover}}></img></a>
       </div>
-        <h4>{{title}}</h4>
+        <h4 id="bookTitle{{id}}">{{title}}</h4>
         <p>{{description}}</p>
+        <p>Genre: {{genre}}</p>
       </li>
+      <!-- <a id="deleteThisBook{{id}}" href="books/{{id}}/delete" class="deleteButton waves-effect red btn-large"><i class="material-icons left">not_interested</i>Delete Book</a> -->
+      <a  href="books/{{id}}" class="editButton waves-effect waves-light btn-large"><i class="material-icons left">mode_edit</i>Edit Book</a>
+
   </div>
 </ul>
 

@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) { //what to do when running migration
     table.text('title');
     table.text('genre');
     table.text('cover');
-    table.text('description'); //creates text column with name of "name"
+    table.text('description'); //creates text column with name of "description"
   })
 };
 

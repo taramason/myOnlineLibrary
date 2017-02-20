@@ -1,0 +1,35 @@
+<h1>{{title}}</h1>
+
+<div class="row">
+    <form class="editBookForm col s12" action="/books/{{id}}?_method=PUT" method="post">
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="title" value="{{title}}" placeholder="{{title}}" id="editedBookTitle" type="text" required/>
+          <label for="title">Book Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input value="genre" value="{{genre}}" placeholder="{{genre}}" id="editedBookGenre" type="text" required>
+          <label for="genre">Genre</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input value="cover" placeholder="Enter new image URL here." id="editedBookImg" type="text" required>
+          <label for="cover">Cover Image</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <textarea value="description" placeholder="{{description}}" id="textarea1 editedBookDescr" class="materialize-textarea"></textarea>
+          <label for="description">Description</label>
+        </div>
+      </div>
+
+
+          <button  type="submit" class="editedButton waves-effect green btn-large"><i class="material-icons left">mode_edit</i>Finalize Edit</button>
+
+    </form>
+  </div>

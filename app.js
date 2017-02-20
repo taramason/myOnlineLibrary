@@ -5,12 +5,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var methodOverride = require('method-override')
 
 var index = require('./routes/index');
 var books = require('./routes/books');
-var add = require('./routes/add');
-var addBookToTable = require("./routes/addBookToTable");
+// var add = require('./routes/add');
 var deleteBook = require('./routes/deleteBook')
+// var addBookToTable = require('./routes/addBookToTable')
 
 
 
@@ -24,14 +25,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(methodOverride('_method'))
 
 
 app.use('/', index);
 app.use("/books", books);
-app.use("/add", add);
-app.use("/addBookToTable", addBookToTable);
+// app.use("/add", add);
 app.use("/deleteBook", deleteBook);
+// app.use("/addBookToTable", addBookToTable);
 
 
 

@@ -4,11 +4,9 @@ var express = require("express");
 var router = express.Router();
 var knex = require('../db/knex');
 
-// var queries = require("../queries");
 
 
 router.get("/", function(req, res) {  //post is you calling from inside the program
-  const id = req.params.id;
   knex('books')  //refers to books table
     .select()
     .orderBy("title", "asc")
@@ -23,14 +21,17 @@ router.get("/", function(req, res) {  //post is you calling from inside the prog
           data: answer
         });
     });
-
 });
 
+//add a book form
+router.get("/add", function(req, res, next) {
+  console.log("in add");
+  res.render('add');
+});
 
 //render single book page
 router.get("/:id", function(req, res) {
   var id = req.params.id;
-  console.log("req.body", req.body)
   knex('books')
     .select()
     .where("id", id)
@@ -41,10 +42,6 @@ router.get("/:id", function(req, res) {
     });
 });
 
-//add a book form
-router.get("/add", function(req, res) {
-  res.render('add', { title: 'Add a book' });
-});
 
 //Add a book POST route:
 router.post('/', function(req, res, next) {
@@ -73,7 +70,7 @@ router.get("/:id/edit", function(req, res, next) {
     })
 });
 
-//Edit PUT route:
+//Edit PUT route to edit existing book:
 router.put("/:id", function(req, res){
   const book = {
     title: req.body.title,

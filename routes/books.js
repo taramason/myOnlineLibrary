@@ -45,12 +45,13 @@ router.get("/:id", function(req, res) {
 
 //Add a book POST route:
 router.post('/', function(req, res, next) {
+  console.log(req.body);
   knex('books')
     .insert({
-      title: req.body.objTitle,
-      genre: req.body.objGenre,
-      cover: req.body.objImg,
-      description: req.body.objDescr
+      title: req.body.title,
+      genre: req.body.genre,
+      cover: req.body.cover,
+      description: req.body.description
     })
     .then(function() {
       res.redirect(`/books`)

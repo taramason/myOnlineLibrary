@@ -1,28 +1,28 @@
 <h1>{{title}}</h1>
 
 <div class="row">
-    <form class="addBookForm col s12" action="/add">
+    <form class="addBookForm col s12" action="/books" method="post">
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Enter book title here." id="newBookTitle" type="text" required/>
+          <input name="title" placeholder="Enter book title here." id="Title" type="text" required/>
           <label for="title">Book Title</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Enter the genre here." id="newBookGenre" type="text" required>
+          <input name="genre" placeholder="Enter the genre here." id="Genre" type="text" required>
           <label for="genre">Genre</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Enter image URL here." id="newBookImg" type="text" required>
+          <input name="cover" placeholder="Enter image URL here." id="cover" type="text" required>
           <label for="cover">Cover Image</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Enter a short description here." id="newBookDescr" type="text" required>
+          <input name="description" placeholder="Enter a short description here." id="description" type="text" required>
           <label for="description">Description</label>
         </div>
       </div>
@@ -32,11 +32,9 @@
           <label for="title">Author</label>
         </div>
       </div> -->
-      <div class="row">
-        <div class="input-field col s6">
-          <a  type="submit" class="addButton waves-effect waves-light btn-large"><i class="material-icons left">done</i>Submit</a>
-        </div>
-      </div>
+
+          <button  type="submit" class="addButton waves-effect waves-light btn-large"><i class="material-icons left">done</i>Submit</button>
+
 
     </form>
   </div>

@@ -2,37 +2,37 @@
 $( document ).ready(function(){
   console.log("jquery working!!");
 
-  $(".addButton").click(function(){
-    console.log("button clicked")
-    event.preventDefault();
-    var newBookTitleVal = $("#newBookTitle").val();
-    var newBookGenreVal = $("#newBookGenre").val();
-    var newBookImgVal = $("#newBookImg").val();
-    var newBookDescrVal = $("#newBookDescr").val();
-    // var newBookAuthorVal = $("#newBookAuthor").val();
-    var obj = {
-      objTitle: newBookTitleVal,
-      objGenre: newBookGenreVal,
-      objImg: newBookImgVal,
-      objDescr: newBookDescrVal
-      // objAuthor: newBookAuthorVal
-    };
-    console.log(obj);
-
-    $.post("/books", obj, function(data){
-      console.log("book info added to table")
-    })
-
-
-    $( '.addBookForm' ).each(function(){
-        this.reset();
-    });
-    // newBookTitleVal = "Your book has been added. Please enter a new book"
-    // newBookGenreVal = ""
-    // newBookImgVal = ""
-    // newBookDescrVal = ""
-//goes to new page
-    });
+//   $(".addButton").click(function(){
+//     console.log("button clicked")
+//     event.preventDefault();
+//     var newBookTitleVal = $("#newBookTitle").val();
+//     var newBookGenreVal = $("#newBookGenre").val();
+//     var newBookImgVal = $("#newBookImg").val();
+//     var newBookDescrVal = $("#newBookDescr").val();
+//     // var newBookAuthorVal = $("#newBookAuthor").val();
+//     var obj = {
+//       objTitle: newBookTitleVal,
+//       objGenre: newBookGenreVal,
+//       objImg: newBookImgVal,
+//       objDescr: newBookDescrVal
+//       // objAuthor: newBookAuthorVal
+//     };
+//     console.log(obj);
+//
+//     $.post("/books", obj, function(data){
+//       console.log("book info added to table")
+//     })
+//
+//
+//     $( '.addBookForm' ).each(function(){
+//         this.reset();
+//     });
+//     // newBookTitleVal = "Your book has been added. Please enter a new book"
+//     // newBookGenreVal = ""
+//     // newBookImgVal = ""
+//     // newBookDescrVal = ""
+// //goes to new page
+//     });
 
 //     $(".editedButton").click(function(){
 //       console.log("edit button clicked")

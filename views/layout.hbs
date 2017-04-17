@@ -7,15 +7,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200|Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
-    <div class="readsNavBar">
-      <a href = "/">
-        <img class = "readsLogo" src = "/images/tux.png" />
-      </a>
-      <h1>Galvanize Reads</h1>
-    </div>
+
+    <nav>
+      <div class="nav-wrapper red lighten-2">
+        <a href="#" class="brand-logo center">My Online Library</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
 
     {{{body}}}
 

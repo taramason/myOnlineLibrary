@@ -7,6 +7,7 @@ var knex = require('../db/knex');
 
 
 router.get("/", function(req, res) {  //post is you calling from inside the program
+console.log("I'm in books")
   knex('books')  //refers to books table
     .select()
     .orderBy("title", "asc")

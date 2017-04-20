@@ -13,6 +13,7 @@ var books = require('./routes/books');
 // var add = require('./routes/add');
 var deleteBook = require('./routes/deleteBook')
 // var addBookToTable = require('./routes/addBookToTable')
+var authors = require('./routes/authors');
 
 
 
@@ -34,6 +35,7 @@ app.use("/books", books);
 // app.use("/add", add);
 app.use("/deleteBook", deleteBook);
 // app.use("/addBookToTable", addBookToTable);
+app.use("/authors", authors);
 
 
 

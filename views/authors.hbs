@@ -1,26 +1,27 @@
-
-<div class="titleContainer flex">
-  <div><h3>{{page_name}}</h3></div>
-</div>
-
-<div class="bookButton row">
-    <a  href="/books/add" class="waves-effect red lighten-2 btn-large"><i class="material-icons left">playlist_add</i>Add a Book</a>
-</div>
-
-{{#each data}}
-<ul class="noBullet">
-  <div class = "row eachBook">
-    <div class = "col s4 m4 l4">
-      <li>
-        <a href="authors/{{id}}"><img class="authorPort" src={{portrait}}></img></a>
-      </div>
-        <h4 id="author{{id}}">{{first}}{{last}}</h4>
-        <p>{{bio}}</p>
-      </li>
-      <!-- <a id="deleteThisBook{{id}}" href="books/{{id}}/delete" class="deleteButton waves-effect red btn-large"><i class="material-icons left">not_interested</i>Delete Book</a> -->
-      <a  href="authors/{{id}}" class="editButton waves-effect red lighten-2 btn-large"><i class="material-icons left">mode_edit</i>Edit Book</a>
-
+<div class="mainPg">
+  <div class="titleContainer flex">
+    <div><h3>{{page_name}}</h3></div>
   </div>
-</ul>
 
-{{/each}}
+  <div class="bookButton row">
+      <a  href="/authors/add" class="waves-effect red lighten-2 btn-large"><i class="material-icons left">playlist_add</i>Add an Author</a>
+  </div>
+
+  {{#each data}}
+  <ul class="noBullet">
+    <div class = "row eachBook">
+      <div class = "col s4 m4 l4">
+        <li>
+          <a href="authors/{{id}}"><img class="authorPort" src={{portrait}}></img></a>
+        </div>
+          <h4 id="author{{id}}">{{book_id}}{{last}}</h4>
+          <p>{{bio}}</p>
+          <h4>{{first}}'s Books:</h4>
+        </li>
+        <!-- <a id="deleteThisBook{{id}}" href="books/{{id}}/delete" class="deleteButton waves-effect red btn-large"><i class="material-icons left">not_interested</i>Delete Book</a> -->
+        <!-- <a  href="authors/{{id}}" class="editButton waves-effect red lighten-2 btn-large"><i class="material-icons left">mode_edit</i>Edit Book</a> -->
+
+    </div>
+  </ul>
+  {{/each}}
+</div>

@@ -6,13 +6,13 @@ var knex = require('../db/knex');
 
 
 
-router.get("/", function(req, res) {  //post is you calling from inside the program
+router.get("/", function(req, res) {
 console.log("I'm in books")
-  knex('books')  //refers to books table
+  knex('books')  //books table
     .select()
     .orderBy("title", "asc")
-    .then(function(answer) { //
-        res.render("books", { //render always refers to views folder, + /books.hbs ("books")
+    .then(function(answer) {
+        res.render("books", { //views folder, + /books.hbs ("books")
           id: "id",
           page_name: "books",
           title: "title",

@@ -1,27 +1,23 @@
 <div class="mainPg">
-  <div class="titleContainer flex">
-    <div><h3>{{page_name}}</h3></div>
-  </div>
 
   <div class="bookButton row">
       <a  href="/authors/add" class="waves-effect red lighten-2 btn-large"><i class="material-icons left">playlist_add</i>Add an Author</a>
   </div>
 
   {{#each data}}
-  <ul class="noBullet">
-    <div class = "row eachBook">
-      <div class = "col s4 m4 l4">
-        <li>
-          <a href="authors/{{id}}"><img class="authorPort" src={{portrait}}></img></a>
-        </div>
-          <h4 id="author{{id}}">{{book_id}}{{last}}</h4>
-          <p>{{bio}}</p>
-          <h4>{{first}}'s Books:</h4>
-        </li>
-        <!-- <a id="deleteThisBook{{id}}" href="books/{{id}}/delete" class="deleteButton waves-effect red btn-large"><i class="material-icons left">not_interested</i>Delete Book</a> -->
-        <!-- <a  href="authors/{{id}}" class="editButton waves-effect red lighten-2 btn-large"><i class="material-icons left">mode_edit</i>Edit Book</a> -->
-
+  <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{portrait}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{first}} {{last}}<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{first}} {{last}}<i class="material-icons right">close</i></span>
+        <p>{{bio}}</p>
+      </div>
     </div>
-  </ul>
+    <!-- ADD LATER: -->
+    <!-- <h4>{{first}}'s Books:</h4> -->
   {{/each}}
 </div>

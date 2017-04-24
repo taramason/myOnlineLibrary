@@ -1,21 +1,29 @@
 /*font-family: 'Special Elite', cursive;
 font-family: 'Oswald', sans-serif;*/
 html {
-  background: url("../images/library.jpg") no-repeat center center fixed;
-  -webkit-background-size: auto;
+  /*background: url("../images/library.jpg");
+  /*-webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
-  background-size: auto;
-}
-body {
+  background-size: auto;*/
+  /*height: 100vh;
+  width: 100vw;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: url("../images/library.jpg") no-repeat center center fixed;
-
+  background-size:cover;
+}
+body {
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("../images/library.jpg") no-repeat center center fixed;
+  background-size:cover;*/
 }
 a {
   color: #00B7FF;
 }
-
+.card {
+  width: 300px !important;
+  margin: 2%;
+}
 .mainPg {
   margin: 8%;
 }

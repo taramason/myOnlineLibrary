@@ -1,10 +1,13 @@
 <div class="mainPg">
 
-  <div class="bookButton row">
+  <!-- NEED TO ADD FUNCTIONALITY: -->
+  <!-- <div class="bookButton row">
       <a  href="/authors/add" class="waves-effect red lighten-2 btn-large"><i class="material-icons left">playlist_add</i>Add an Author</a>
-  </div>
+  </div> -->
 
+  <div class="mainAuthors">
   {{#each data}}
+
   <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="{{portrait}}">
@@ -20,4 +23,5 @@
     <!-- ADD LATER: -->
     <!-- <h4>{{first}}'s Books:</h4> -->
   {{/each}}
+</div>
 </div>

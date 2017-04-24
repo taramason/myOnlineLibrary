@@ -24,6 +24,10 @@ a {
   width: 300px !important;
   margin: 2%;
 }
+.mainAuthors {
+  display: flex;
+  justify-content: space-around;
+}
 .mainPg {
   margin: 8%;
 }
